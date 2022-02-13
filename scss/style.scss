@@ -40,13 +40,18 @@ body {
 .title span {
   font-weight: 700;
 }
+.allTasks{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 40vw;
+}
 .addTask {
   border: none;
   background: transparent;
   font-size: 24px;
   cursor: pointer;
   margin-bottom: .5rem;
-
 
   &__box{
   display: flex;
@@ -65,6 +70,8 @@ body {
     padding: .5rem 2rem;
     border: 1px solid white;
     background-color: rgba(255, 255, 255, 0.281);
+    margin-top: .5rem;
+    transition: all .2s;
     cursor: pointer;
   }
  &__optionalInputs{
@@ -72,7 +79,7 @@ body {
    width: 100%;
    margin-bottom: .5rem;
  }
-&__option{
+&__option, &__select{
   color: black;
   align-self: flex-start;
   height: 25px;
@@ -91,10 +98,13 @@ body {
 }
 }
 
+.addTask__btn:hover{
+  color: rgb(0, 0, 109);
+  background-color: white;
+}
 
 .addTask-show{
   height: 150px;
-  border-radius: 10px;
   transition: all .3s;;
 }
 
@@ -107,6 +117,7 @@ body {
   padding: 1.5rem 1.5rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+  margin-bottom: .3rem;
   &__type {
     position: absolute;
     right: 1.5rem;

@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;800;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -27,32 +27,34 @@
                 <input class="addTask__input addTask__time" type="text" placeholder="Time">
             </div>
             <input class="addTask__input addTask__title" type="text" placeholder="Title">
-            <select class="addTask__option" name="type" id="" >
+            <select class="addTask__select" name="type" id="">
                 <option class="addTask__option" value="select">Select type</option>
                 <option class="addTask__option" value="Task">Task</option>
                 <option class="addTask__option" value="Meeting">Meeting</option>
                 <option class="addTask__option" value="Shopping">Shopping</option>
             </select>
+            <p class="warning-text"></p>
             <button class="addTask__btn">Add</button>
         </div>
-        <div class="task">
-            <p class="task__date">Saturday</p>
-            <label class="task__box">
-                <input class="task__input" type="checkbox">
-                <div class="task__checkbox">
+        <div class="allTasks">
+            <div class="task">
+                <p class="task__date">Saturday</p>
+                <label class="task__box">
+                    <input class="task__input" type="checkbox">
+                    <div class="task__checkbox">
                         <img class="icon" src="./img/done.svg" alt="">
-                </div>
-                <p class="task__title" for="">Go for a walk</p>
+                    </div>
+                    <p class="task__title" for="">Go for a walk</p>
                 </label>
-            <p class="task__time">9:00 a.m</p>
-            <p class="task__type">Task</p>
-            <button class="task__edit">
-                <img  src="./img/edit.svg" alt="">
-            </button>
-            
+                <p class="task__time">9:00 a.m</p>
+                <p class="task__type">Task</p>
+                <button class="task__edit">
+                    <img src="./img/edit.svg" alt="">
+                </button>
+            </div>
         </div>
-        
-        
+
+
     </div>
     <script src="./main.js"></script>
 </body>
