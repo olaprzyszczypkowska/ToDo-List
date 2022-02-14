@@ -69,7 +69,7 @@ body {
   background: transparent;
   font-size: 24px;
   cursor: pointer;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .addTask__box {
@@ -90,18 +90,18 @@ body {
   height: 0;
   width: 50%;
   overflow: hidden;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .addTask__btn {
   color: #fffefe;
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.281);
-  margin-top: .5rem;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  margin-top: 0.5rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   cursor: pointer;
 }
 
@@ -109,8 +109,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .addTask__option, .addTask__select {
@@ -142,8 +145,8 @@ body {
 
 .addTask-show {
   height: 150px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .task {
@@ -161,7 +164,7 @@ body {
   border-radius: 10px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
 }
 
 .task__type {
@@ -186,7 +189,7 @@ body {
 .task__title {
   font-size: 20px;
   display: inline-block;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 .task__date, .task__time {
@@ -241,5 +244,38 @@ body {
 
 .active {
   background-color: white;
+}
+
+.addTask__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.delete__btn,
+.add__btn {
+  border: none;
+  padding: 0.3rem 0.8rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+}
+
+.delete__btn {
+  background: transparent;
+  color: white;
+  text-decoration: underline;
+  margin-right: 0.3rem;
+}
+
+.add__btn {
+  background-color: white;
+  color: black;
+}
+
+.edit-task {
+  font-size: 12px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -40,7 +40,7 @@ body {
 .title span {
   font-weight: 700;
 }
-.allTasks{
+.allTasks {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -51,61 +51,62 @@ body {
   background: transparent;
   font-size: 24px;
   cursor: pointer;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 
-  &__box{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 1rem;
-   height: 0;
-   width: 50%;
+    height: 0;
+    width: 50%;
     overflow: hidden;
-    transition: all .3s;
-    
+    transition: all 0.3s;
   }
-  &__btn{
+  &__btn {
     color: rgb(255, 254, 254);
-    padding: .5rem 2rem;
+    padding: 0.5rem 2rem;
     border: 1px solid white;
     background-color: rgba(255, 255, 255, 0.281);
-    margin-top: .5rem;
-    transition: all .2s;
+    margin-top: 0.5rem;
+    transition: all 0.2s;
     cursor: pointer;
   }
- &__optionalInputs{
-   display: flex;
-   width: 100%;
-   margin-bottom: .5rem;
- }
-&__option, &__select{
-  color: black;
-  align-self: flex-start;
-  height: 25px;
-}
-&__input{
-  color:black;
-  width: 70px;
-  height: 25px;
-}
-&__title{
-  width: 100%;
-  margin-bottom: 0.5rem;
-}
-&__date{
-  margin-right: 1rem;
-}
+  &__optionalInputs {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  &__option,
+  &__select {
+    color: black;
+    align-self: flex-start;
+    height: 25px;
+  }
+  &__input {
+    color: black;
+    width: 70px;
+    height: 25px;
+  }
+  &__title {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  &__date {
+    margin-right: 1rem;
+  }
 }
 
-.addTask__btn:hover{
+.addTask__btn:hover {
   color: rgb(0, 0, 109);
   background-color: white;
 }
 
-.addTask-show{
+.addTask-show {
   height: 150px;
-  transition: all .3s;;
+  transition: all 0.3s;
 }
 
 .task {
@@ -117,7 +118,7 @@ body {
   padding: 1.5rem 1.5rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
   &__type {
     position: absolute;
     right: 1.5rem;
@@ -132,13 +133,13 @@ body {
     right: 1.5rem;
     cursor: pointer;
   }
-  &__edit img{
+  &__edit img {
     width: 20px;
   }
   &__title {
     font-size: 20px;
     display: inline-block;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
   }
   &__date,
   &__time {
@@ -153,42 +154,65 @@ body {
     width: 1.2rem;
     height: 1.2rem;
     opacity: 0;
-   
-
   }
-  &__box{
-      position: relative;
+  &__box {
+    position: relative;
   }
-  &__checkbox{
-position: absolute;
-display: flex;
-  width: 1.2rem;
+  &__checkbox {
+    position: absolute;
+    display: flex;
+    width: 1.2rem;
     height: 1.2rem;
     background-color: rgba(255, 255, 255, 0.281);
     left: 0;
     top: 0%;
-    border:1px solid rgba(255, 255, 255, 0.322);
+    border: 1px solid rgba(255, 255, 255, 0.322);
     cursor: pointer;
-    
   }
 }
 
-.icon{
+.icon {
   display: none;
 }
-.icon-active{
+.icon-active {
   display: block;
 }
- .task-done{
+.task-done {
   background-color: rgba(255, 255, 255, 0.109);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.068);
 }
 
-.done-text{
+.done-text {
   color: rgba(255, 255, 255, 0.418);
- }
-.active{
-    background-color: rgb(255, 255, 255);
 }
 
+.active {
+  background-color: rgb(255, 255, 255);
+}
 
+.addTask__btns {
+  display: flex;
+  justify-content: end;
+}
+.delete__btn,
+.add__btn {
+  border: none;
+  padding: 0.3rem 0.8rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+}
+.delete__btn {
+  background: transparent;
+  color: white;
+  text-decoration: underline;
+  margin-right: 0.3rem;
+}
+
+.add__btn {
+  background-color: white;
+  color: black;
+}
+
+.edit-task {
+  font-size: 12px;
+}
